@@ -1,0 +1,50 @@
+.holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 200px;
+    align-items: stretch;
+    align-content: center;
+    width: 900px;
+    border: 10px solid #333;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.item {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.item:first-child {
+    background-color: coral;
+    order: -2;
+    width: 450px;
+    border-radius: 15px 0 0 0 ;
+}
+
+.item:nth-child(2) {
+    background-color: lightblue;
+    order: 2;
+}
+
+.item:nth-child(3) {
+    background-color: rgb(168, 115, 216);
+    order: 1;
+}
+
+.item:nth-child(4) {
+    background-color: rgb(118, 239, 118);
+    order: 3;
+}
+
+.item:nth-child(5) {
+    background-color: rgb(255, 255, 104);
+    order: -1;
+    width: 450px;
+    border-radius: 0 15px 0 0 ;
+}
+
